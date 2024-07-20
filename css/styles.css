@@ -93,7 +93,7 @@ ul {
 
 .event-idea {
     aspect-ratio: 1440 / 610.87;
-    background-image: url('../images/backgrounds/event-idea.png');
+    background-image: url('images/backgrounds/event-idea.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
