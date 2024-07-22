@@ -6,6 +6,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
+section {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px
+}
+
 /*nvabar*/
 
 nav {
@@ -331,6 +337,183 @@ ul {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
+/*support-plan*/
+.support-plan {
+    background-color: #0000FF; /* 藍色背景 */
+    font-family: 'Bodoni MT';
+}
+
+    .support-plan h1 {
+        letter-spacing: 6.92px;
+        font-weight: bolder;
+    }
+
+    .support-plan .card {
+        background-color: #0000FF;
+        border: none;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .support-plan .card-body {
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        width: 80%;
+        height: 25vw;
+        margin: 0 auto;
+    }
+
+    .support-plan .card-title {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        white-space: nowrap;
+        text-align: center;
+        letter-spacing: 9.6px;
+        padding: 8px;
+        font: 900 2rem Gen Jyuu Gothic P, -apple-system, Roboto, Helvetica, sans-serif;
+    }
+
+    .support-plan .card1 {
+        border: 5px solid #8fc31f;
+        -webkit-text-stroke: 0.8px #8fc31f;
+    }
+
+    .support-plan .card2 {
+        border: 5px solid #EA723D;
+        -webkit-text-stroke: 0.8px #EA723D;
+    }
+
+    .support-plan .card3 {
+        border: 5px solid #E876D6;
+        -webkit-text-stroke: 0.8px #E876D6;
+    }
+
+    .support-plan .list-styled {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+        .support-plan .list-styled li {
+            margin: 5px 0;
+            text-align: left;
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+        }
+
+        .plan-info {
+            background-color: #0000FF;
+            padding: 20px;
+        }
+
+.plan-price {
+    margin-bottom: 10px;
+    letter-spacing: 0.6rem;
+    padding: 0 20px;
+    font: 700 1.9rem Gen Jyuu Gothic P, sans-serif;
+}
+.green-text {
+    color: #8fc31f;
+}
+
+.oringe-text {
+    color: #EA723D;
+}
+
+.pink-text {
+    color: #E876D6;
+}
+
+.plan-stock {
+    color: #fff;
+    font: 600 1.8rem Gen Jyuu Gothic P, sans-serif;
+    letter-spacing: 0.3rem;
+}
+
+.product-tabs {
+    position: relative;
+    width: 90%;
+}
+
+.nav-pills {
+    background-color: #8fc31f;
+    border-radius: 55px;
+    height: 70px;
+    padding: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+    .nav-pills .nav-item {
+        padding: 0;
+    }
+
+
+    .nav-pills .nav-link {
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-size: 28px;
+        letter-spacing: 5px;
+        border-radius: 40px;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+    }
+
+        .nav-pills .nav-link.active {
+            background-color: white;
+            color: #0000FF;
+            font-weight: bolder;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+
+.triangle-indicator {
+    position: relative;
+    bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 40px solid #fff;
+    transition: left 0.3s ease;
+    z-index: 3;
+}
+
+.product-info {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: -5px; /* 使白色背景與三角形重疊 */
+    position: relative;
+    z-index: 1;
+}
+
+    .product-info p {
+        font: 600 1.4rem Gen Jyuu Gothic P, sans-serif;
+        word-wrap: break-word; /* 允許長單詞斷行 */
+        overflow-wrap: break-word; /* 現代瀏覽器優先使用這個屬性 */
+        white-space: normal; /* 確保文本正常換行 */
+        text-align: left; /* 文本左對齊 */
+        max-width: 100%; 
+        line-height: 2rem;
+    }
+
+    .product-info img {
+    }
+
 
 
 /* 響應式設計 */
@@ -347,6 +530,15 @@ ul {
         font-size: 14px;
         padding: 8px 16px;
     }
+
+    .product-info {
+        flex-direction: column;
+    }
+
+        .product-info img {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
 }
 
 @media (max-width: 480px) {
